@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <title>Cart</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/Practice.html">Home</a>
+            <a href="/Practice.html" onclick="ScrollToMid(); event.preventDefault();">Our Product</a> <!--event.preventDefault() : It is a pre defined function used to from default behavior of anchor tag-->  
+            <a href="/Practice.html#" onclick="ScrollToFooter(); event.preventDefault();">Contact us</a>
+            <a href="#" onclick="loginAnchor()">Login </a>
+        </nav>
+        <div class="cart1" >
+            <span class="cart" id="cart-name">
+            <a href="Cart.html" id="cart-value">Cart : 0</a>
+            </span>
+        </div>
+    </header>
+    <div class="body">
+        <div id="login-page" style="display: none;">
+        <span class="login" id="login">Login</span>
+        <input type="email" name="email" id="inputMail" class="input" required placeholder="Enter your email address." onblur="checkRequired()">
+        <input type="password" name="password" id="inputPass" class="input" required placeholder="Enter your Password." onblur="checkRequired()">
+        <p style ="display:none;color:gray">Please fill all the required Fields</p>
+        <button type="submit" class="login-btn" onclick="saveLogintolocal()">Login to Website</button>
+    </div>
+    <h2>Cart</h2>
+    <div id="cart">
+        <div class="cart-title-wrapper">
+        <div class="cart-body" style="width: 500px;">
+        <h4>Products</h4>
+    </div>
+    <div class="cart-quantity">
+        <h4>Quantity</h4>
+    </div>
+    <div class="cart-price">
+        <h4>Price</h4>
+    </div>
+    <div class="subtotal">
+        <h4>Subtotal</h4>
+    </div>
+</div>
+<div class="cart-body-wrapper"></div>
+</div>
+<div class="total-price-div">
+    <h3>Total : 
+        <span id="total-price">0</span>
+    </h3>
+</div>
+<div class="bton">
+    <button onclick="checkout()" id="checkout-btn">Check Out </button>
+ </div>
+</div>
+<footer id="footer">
+    <div class="content">
+        <div class="content1">Contact Number : 0323-1993926</div>
+        <div class="content2">Email-address : aliimransachwani4@gmai.com</div>
+    </div>
+</footer>
+
+
+<script src="Cart.js"></script>
+<!-- <script src="practice.js"></script> -->
+</body>
+</html>

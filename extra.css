@@ -1,0 +1,143 @@
+#home {
+    width: 100%;
+}
+
+.body {
+    align-items: center;
+}
+
+.body h2 {
+    align-self: center;
+    color: #668844;
+}
+
+#login-page {
+    background-color: #ffffff;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    right: 50%;
+    left: 20%;
+    width: 550px;
+    height: 550px;
+    align-items: center;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    gap: 10px;
+    animation-name: loginToptoDown;
+    animation-duration: 2s;
+    top: 5px;
+    margin-top: 90px;
+    padding: 50px;
+}
+
+.login {
+    font-size: 1.7rem;
+    /* margin: 20px 0 10px 0; */
+}
+
+input {
+    width: 85%;
+    height: 50px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding-left: 15px;
+    font-weight: 650;
+    color: rgba(0, 0, 0, 0.5);
+    outline-style: none;
+    margin-top: 10px;
+}
+
+.login-btn {
+    width: 80%;
+    height: 45px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #679289;
+    font-size: large;
+    font-weight: bold;
+    /* box-shadow: 0px 0px 10px 0px  1px rgba(0, 0, 0, 0.2) ; */
+}
+
+.login-btn:active {
+    background-color: #999299;
+}
+
+.cart-title-wrapper {
+    display: flex;
+}
+
+.cart-wrapper {
+    border: 3px solid black;
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+    margin: 1px;
+    display: flex;
+}
+
+.cart-body {
+    height: auto;
+    width: 100%;
+    display: flex;
+    margin: 1px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.cart-body img {
+    height: auto;
+}
+
+.cart-quantity {
+    width: 13%;
+    min-height: 1vh;
+    margin: 1px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.cart-quantity p {
+    text-align: center;
+}
+
+.cart-price {
+    width: 13%;
+    margin: 1px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.subtotal{
+    width: 13%;
+    margin: 1px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.total-price-div{
+    text-align: right;
+}
+
+.bton {
+    width: 100%;
+}
+
+.bton button {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: -4px 3px 3px black;
+}
+
+@keyframes loginToptoDown {
+    from {
+        top: -200px;
+    }
+
+    to {
+        top: 5px;
+    }
+}
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <a href="/Practice.html">Home</a>
+            <a href="/Practice.html" onclick="ScrollToMid(); event.preventDefault();">Our Product</a> <!--event.preventDefault() : It is a pre defined function used to from default behavior of anchor tag-->  
+            <a href="/Practice.html" onclick="ScrollToFooter(); event.preventDefault();">Contact us</a>
+            <a href="#" onclick="loginAnchor()">Login </a>
+        </nav>
+        <div class="cart1" >
+            <span class="cart">
+            <a href="Cart.html" id="cart">Cart : 0</a>
+            </span>
+        </div>
+    </header>
+    
+    
+    <!-- Slide Show -->
+
+    <div class="slide-cont">
+        <div class="myslide">
+            <img src=https://img.freepik.com/free-photo/still-life-sport-arrangement_23-2149006364.jpg?size=626&ext=jpg&ga=GA1.1.250384678.1685282274&semt=ais  alt="">
+ </div>
+ <div class="myslide">
+    <img src=https://img.freepik.com/premium-photo/sports-equipment-wooden-background_51195-962.jpg?size=626&ext=jpg&ga=GA1.2.250384678.1685282274&semt=ais   alt="">
+</div>
+
+<div class="myslide">
+    <img src=https://img.freepik.com/premium-vector/sport-equipment-icon-set_78072-479.jpg?size=626&ext=jpg&ga=GA1.1.250384678.1685282274&semt=ais  
+     alt="">
+</div>
+
+<!-- Previous and next button -->
+<a class="previous" onclick="plusSlides(-1)" >&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div class="body">
+    <div id="login-page" style="display: none;">
+    <span class="login" id="login">Login</span>
+    <input type="email" name="email" id="inputMail" class="input" required placeholder="Enter your email address." onblur="checkRequired()">
+    <input type="password" name="password" id="inputPass" class="input" required placeholder="Enter your Password." onblur="checkRequired()">
+    <p style ="display:none;color:gray">Please fill all the required Fields</p>
+    <button type="submit" class="login-btn" onclick="saveLogintolocal()">Login to Website</button>
+</div>
+<!-- Carousel  -->
+<div class="carousel-slide" id="product">
+    <h2>OUR PRODUCTS</h2>
+    <div class="carousel-inner" id="wrapper">
+        <div class="carousel-items">
+            <h3>CRICKET BAT</h3>
+            <p>
+            <img src="https://cdn.shopify.com/s/files/1/0167/6391/2292/products/19990Giant_angle_2000x.jpg?v=1656996541" alt="" width="100%" height="500px" style="margin-top: 20px;">
+                Good Quality Bat <br>Made in Pakistan <br>Only at 6$
+            </p>
+            <br>
+            <button id="0" onclick="addToCart()" >Add to Cart</button>
+    </div>
+    <div class="carousel-items">
+        <h3>CRICKET PADS</h3>
+            <p>          
+            <img src=https://thesportsfactory.pk/wp-content/uploads/2021/09/BS-rapid-70-BATTING-pads-min.png width="400px" height="500px" style="margin-top: 20px;">
+            High Quality Pads <br>Made from PVC and high quality foam, Made in Pakistan <br>Pair : Only at 20$
+        </p>
+        <br>
+        <button id="1" onclick="addToCart()" >Add to Cart</button>
+    </div>
+    <div class="carousel-items">
+        <h3>FOOTBALL</h3>
+            <p> 
+            <img src=https://img.pixers.pics/pho_wat(s3:700/FO/39/35/31/98/700_FO39353198_26c99e7cede96424827458bec938a132.jpg,700,700,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,650,jpg)/posters-stylish-football-soccer-ball-on-white-background.jpg.jpg alt="" width="400px" height="500px" style="margin-top: 20px;">
+                Fifa Company Football <br>Made up of PVC and Leather <br>Only at 7$      
+        </p>
+        <br>
+        <button id="2" onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+    <div class="marq">
+        <marquee behavior="" direction="left">
+            If &nbsp; you &nbsp; want &nbsp; any &nbsp; other &nbsp; sports &nbsp; item ,&nbsp; don't &nbsp; hestitate &nbsp; to &nbsp; contact &nbsp; with &nbsp; us  
+        </marquee>
+    </div>
+    <footer id="footer">
+        <div class="content">
+            <div class="content1">Contact Number : 0323-1993926</div>
+            <div class="content2">Email-address : aliimransachwani4@gmai.com</div>
+        </div>
+    </footer>
+</div>
+
+
+
+<script src="practice.js"></script>
+</body>
+</html>
