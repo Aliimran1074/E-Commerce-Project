@@ -46,18 +46,14 @@ header{
   nav a:hover {
       background-color:gray;
   }
-/* .body{
-    margin-top: 40px;
-    margin-left: 80px;
-} 
-.cart-title-wrapper{
-    display:flex;
-    margin-top: 10px;
-    /* align-items: center; */
-    /* border: 2px solid navy; */
-    /* height: 400px; */
-    /* justify-content: center; */
- /* }  */
+/* .cart-title-wrapper{ 
+    display:flex; 
+     margin-top: 10px; 
+    align-items: center; 
+    border: 2px solid navy;
+    height: 400px;
+     justify-content: center;
+ }  */
  /* .cart-title-wrapper div{
     margin: 20px;
     width:300px;
@@ -88,18 +84,7 @@ h2{
     font-size: 30px;
     color: white;
   } 
-  /* .total-price-div{
-    text-align: right;
-}
-.bton {
-    width: 100%;
-}
-
-.bton button {
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: -4px 3px 3px black;
-}   */
+  
 
 #home {
     width: 100%;
@@ -164,7 +149,6 @@ input {
     background-color: #679289;
     font-size: large;
     font-weight: bold;
-    /* box-shadow: 0px 0px 10px 0px  1px rgba(0, 0, 0, 0.2) ; */
 }
 
 .login-btn:active {
@@ -176,24 +160,6 @@ input {
     margin-top: 20px;
     
 }
-
-/* .cart-wrapper {
-    border: 3px solid black;
-    border-radius: 5px;
-    height: 50px;
-    width: 100%;
-    margin: 1px;
-    display: flex;
-} */
-
-/* .cart-body {
-    height: auto;
-    width: 100%;
-    display: flex;
-    margin: 1px;
-    border: 1px solid black;
-    border-radius: 5px;
-} */
 
 .total-price-div{
     text-align: right;
@@ -244,6 +210,7 @@ input {
     border-radius: 10px;
     font-size: 26px;
     color: white;
+
 }
 
 .cart a{
@@ -256,4 +223,44 @@ input {
   }
 .cart a:hover{
     background-color: gray;
+}
+.cart-wrapper{
+    display: flex;
+     margin-left: 50px;
+     /* padding-left: 50px; */
+}
+.cart-body1{
+    margin-right:400px;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: capitalize;
+    color:black;
+    transition: ease-in 0.3s;
+    /* cursor: pointer; */
+}
+.cart-quantity1{
+    margin-right:300px;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: capitalize;
+    color:black;
+    transition: ease-in 0.3s;
+    /* cursor: pointer; */
+}
+.cart-price1{
+    margin-right:300px;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: capitalize;
+    color:black;
+    transition: ease-in 0.3s;
+    /* cursor: pointer; */
+}
+.subtotal1{
+    margin-right:300px;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: capitalize;
+    color:black;
+    transition: ease-in 0.3s;
 }

@@ -9,8 +9,6 @@ let cartArray = JSON.parse(localStorage.getItem('cart'))
 // console.log(cartBodyWrapper)
 console.log(cartArray);
 
-alert(cartArray)
-
 for (i = 0; i < cartArray.length; i++) {
 
     let cartId = cartArray[i]
@@ -26,7 +24,7 @@ for (i = 0; i < cartArray.length; i++) {
     // creating cart body div
     let cartBody = document.createElement('DIV')
 
-    cartBody.className = 'cart-body'
+    cartBody.className = 'cart-body1'
 
     // appending cartbody to cart wrapper as child
     cartWrapper.appendChild(cartBody)
@@ -61,7 +59,7 @@ for (i = 0; i < cartArray.length; i++) {
     let cartQuantityDiv = document.createElement('DIV')
 
     // giving class of cart-quantity to cartQuantity
-    cartQuantityDiv.className = 'cart-quantity'
+    cartQuantityDiv.className = 'cart-quantity1'
 
 
 
@@ -100,32 +98,11 @@ for (i = 0; i < cartArray.length; i++) {
     // appending cartQuantity to CartWrapper as child
     cartWrapper.appendChild(cartQuantityDiv)
 
-
-
-    // // creating increment div
-    // let decrementDiv = document.createElement('DIV')
-
-    // // giving class name
-    // decrementDiv.className = 'decrement'
-
-    // // giving text node to incrementDiv
-    // let decrementDivText = document.createTextNode('-')
-
-    // // appending incrementDivText to incrementDiv
-    // decrementDiv.appendChild(decrementDivText)
-
-    // // appending increment div to cart quantity div
-    // cartQuantityDiv.appendChild(decrementDiv)
-
-
-
-
-
     //creating cartPriceDiv
     let cartPriceDiv = document.createElement('DIV')
 
     // giving classname to cartPriceDiv
-    cartPriceDiv.className = 'cart-price'
+    cartPriceDiv.className = 'cart-price1'
 
     // creating a p element
     let cartPriceP = document.createElement('P')
@@ -141,21 +118,17 @@ for (i = 0; i < cartArray.length; i++) {
 
     cartWrapper.appendChild(cartPriceDiv)
 
-
-
-
-
     // creating subtotalDiv
     let subtotalDiv = document.createElement('DIV')
 
     // giving classname to subtotalDIv
-    subtotalDiv.className = 'subtotal'
+    subtotalDiv.className = 'subtotal1'
 
     //creating subotalp
     let subtotalP = document.createElement('P')
 
     // giving classname to subtotalP
-    subtotalP.className = 'subtotal-p'
+    subtotalP.className = 'subtotal1-p'
 
     // saving subtotal price to variable
     let subtotalprice = products[cartId].price * cartQuantityP.innerText
@@ -175,7 +148,7 @@ for (i = 0; i < cartArray.length; i++) {
 
 
     // getting previous subtotal
-    let previousSubTotal = document.getElementsByClassName('subtotal-p')
+    let previousSubTotal = document.getElementsByClassName('subtotal1-p')
 
 
 
